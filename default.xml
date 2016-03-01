@@ -6,7 +6,7 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
-           revision="refs/tags/android-6.0.1_r3" />
+           revision="refs/tags/android-6.0.1_r13" />
 
   <remote  name="cm"
            fetch="https://github.com"
@@ -74,7 +74,6 @@
   <project name="platform_system_media" path="system/media" remote="github" />
   <project name="platform_system_vold" path="system/vold" remote="github" /> 
   <project name="platform_system_qcom" path="system/qcom" remote="github" />
-  <project name="platform_vendor_aosp" path="vendor/aosp" remote="github" />
   <project name="platform_vendor_qcom-opensource_dpm" path="vendor/qcom/opensource/dpm" remote="github" />
   <project name="platform_vendor_qcom-opensource_fm" path="vendor/qcom/opensource/fm" remote="github" />
 <!-- END AOSP-CAF -->
@@ -90,8 +89,6 @@
 
 <!-- BEGIN CODEAURORA -->
   <project groups="pdk-cw-fs" name="device/common"/>
-  <project groups="device" name="device/google/accessory/arduino"/>
-  <project groups="pdk" name="device/google/accessory/demokit"/>
   <project groups="device,fugu,pdk-fs" name="device/google/atv"/>
   <project name="kernel/lk" path="bootable/bootloader/lk"/>
   <project groups="pdk" name="platform/abi/cpp" path="abi/cpp"/>
@@ -339,34 +336,21 @@
   <project groups="pdk" name="platform/libnativehelper" path="libnativehelper"/>
   <project groups="pdk" name="platform/ndk" path="ndk"/>
   <project name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver"/>
-  <project name="platform/packages/apps/CMFileManager" path="packages/apps/CMFileManager"/>
-  <project name="platform/packages/apps/Calculator" path="packages/apps/Calculator"/>
-  <project name="platform/packages/apps/Calendar" path="packages/apps/Calendar"/>
-  <project name="platform/packages/apps/Camera" path="packages/apps/Camera"/>
-  <project name="platform/packages/apps/Camera2" path="packages/apps/Camera2"/>
   <project name="platform/packages/apps/CarrierConfig" path="packages/apps/CarrierConfig"/>
   <project name="platform/packages/apps/CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver"/>
   <project groups="pdk-cw-fs" name="platform/packages/apps/CertInstaller" path="packages/apps/CertInstaller"/>
   <project name="platform/packages/apps/Contacts" path="packages/apps/Contacts"/>
   <project name="platform/packages/apps/ContactsCommon" path="packages/apps/ContactsCommon"/>
-  <project name="platform/packages/apps/DeskClock" path="packages/apps/DeskClock"/>
   <project name="platform/packages/apps/Dialer" path="packages/apps/Dialer"/>
   <project name="platform/packages/apps/Email" path="packages/apps/Email"/>
-  <project name="platform/packages/apps/ExactCalculator" path="packages/apps/ExactCalculator"/>
   <project name="platform/packages/apps/Exchange" path="packages/apps/Exchange"/>
   <project name="platform/packages/apps/FMRadio" path="packages/apps/FMRadio"/>
-  <project name="platform/packages/apps/Gallery" path="packages/apps/Gallery"/>
-  <project name="platform/packages/apps/Gallery2" path="packages/apps/Gallery2"/>
   <project name="platform/packages/apps/HTMLViewer" path="packages/apps/HTMLViewer"/>
   <project name="platform/packages/apps/InCallUI" path="packages/apps/InCallUI"/>
   <project name="platform/packages/apps/KeyChain" path="packages/apps/KeyChain"/>
-  <project name="platform/packages/apps/Launcher2" path="packages/apps/Launcher2"/>
   <project name="platform/packages/apps/Launcher3" path="packages/apps/Launcher3"/>
-  <project name="platform/packages/apps/LegacyCamera" path="packages/apps/LegacyCamera"/>
   <project name="platform/packages/apps/ManagedProvisioning" path="packages/apps/ManagedProvisioning"/>
-  <project name="platform/packages/apps/Messaging" path="packages/apps/Messaging"/>
   <project name="platform/packages/apps/Mms" path="packages/apps/Mms"/>
-  <project name="platform/packages/apps/Music" path="packages/apps/Music"/>
   <project name="platform/packages/apps/MusicFX" path="packages/apps/MusicFX"/>
   <project name="platform/packages/apps/Nfc" path="packages/apps/Nfc"/>
   <project name="platform/packages/apps/OneTimeInitializer" path="packages/apps/OneTimeInitializer"/>
@@ -376,13 +360,8 @@
   <project name="platform/packages/apps/Protips" path="packages/apps/Protips"/>
   <project name="platform/packages/apps/Provision" path="packages/apps/Provision"/>
   <project name="platform/packages/apps/SmartCardService" path="packages/apps/SmartCardService"/>
-  <project name="platform/packages/apps/SoundRecorder" path="packages/apps/SoundRecorder"/>
-  <project name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts"/>
-  <project name="platform/packages/apps/SpeechRecorder" path="packages/apps/SpeechRecorder"/>
   <project name="platform/packages/apps/Stk" path="packages/apps/Stk"/>
   <project name="platform/packages/apps/Tag" path="packages/apps/Tag"/>
-  <project name="platform/packages/apps/Terminal" path="packages/apps/Terminal"/>
-  <project name="platform/packages/apps/Trebuchet" path="packages/apps/Trebuchet"/>
   <project name="platform/packages/apps/TvSettings" path="packages/apps/TvSettings"/>
   <project name="platform/packages/apps/UnifiedEmail" path="packages/apps/UnifiedEmail"/>
   <project name="platform/packages/experimental" path="packages/experimental"/>
@@ -397,21 +376,10 @@
   <project name="platform/packages/providers/TelephonyProvider" path="packages/providers/TelephonyProvider"/>
   <project name="platform/packages/providers/TvProvider" path="packages/providers/TvProvider"/>
   <project groups="pdk-cw-fs" name="platform/packages/providers/UserDictionaryProvider" path="packages/providers/UserDictionaryProvider"/>
-  <project name="platform/packages/screensavers/Basic" path="packages/screensavers/Basic"/>
-  <project name="platform/packages/screensavers/PhotoTable" path="packages/screensavers/PhotoTable"/>
   <project name="platform/packages/screensavers/WebView" path="packages/screensavers/WebView"/>
   <project name="platform/packages/services/Mms" path="packages/services/Mms"/>
   <project name="platform/packages/services/Telecomm" path="packages/services/Telecomm"/>
-  <project name="platform/packages/wallpapers/Basic" path="packages/wallpapers/Basic"/>
-  <project name="platform/packages/wallpapers/Galaxy4" path="packages/wallpapers/Galaxy4"/>
-  <project name="platform/packages/wallpapers/HoloSpiral" path="packages/wallpapers/HoloSpiral"/>
-  <project name="platform/packages/wallpapers/LivePicker" path="packages/wallpapers/LivePicker"/>
-  <project name="platform/packages/wallpapers/MagicSmoke" path="packages/wallpapers/MagicSmoke"/>
-  <project name="platform/packages/wallpapers/NoiseField" path="packages/wallpapers/NoiseField"/>
-  <project name="platform/packages/wallpapers/PhaseBeam" path="packages/wallpapers/PhaseBeam"/>
   <project groups="pdk" name="platform/pdk" path="pdk"/>
-  <project name="platform/platform_testing" path="platform_testing"/>
-  <project name="platform/prebuilts/android-emulator" path="prebuilts/android-emulator"/>
   <project groups="pdk,darwin" name="platform/prebuilts/clang/darwin-x86/host/3.6" path="prebuilts/clang/darwin-x86/host/3.6" clone-depth="1"/>
   <project groups="pdk,linux" name="platform/prebuilts/clang/linux-x86/host/3.6" path="prebuilts/clang/linux-x86/host/3.6" clone-depth="1"/>
   <project name="platform/prebuilts/devtools" path="prebuilts/devtools" clone-depth="1"/>
