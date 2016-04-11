@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.github.com/krexus/manifest/mm/krexus-logo.png" width="600">
+  <img src="https://raw.github.com/krexus-caf/manifest/caf/krexus-caf-logo.png" width="600">
 </p>
 
 

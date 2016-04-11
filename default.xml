@@ -8,22 +8,25 @@
            review="android-review.googlesource.com"
            revision="refs/tags/android-6.0.1_r13" />
 
-  <remote  name="cm"
-           fetch="https://github.com"
-           revision="refs/heads/cm-13.0" />
-  
-  <remote  name="krexus-caf"
-           revision="caf"
-           fetch="https://github.com/krexus-caf/" />
-	
   <remote  name="aosp-caf"
            fetch="https://github.com/AOSP-CAF"
            revision="refs/heads/mm6.0" />
 
+  <remote  name="cm"
+           fetch="https://github.com/CyanogenMod"
+           revision="refs/heads/cm-13.0" />
+
+  <remote  name="github"
+           fetch="https://github.com" />
+  
+  <remote  name="krexus-caf"
+           revision="caf"
+           fetch="https://github.com/krexus-caf" />
+
 <!-- BEGIN KREXUS-CAF -->
   <project name="manifest" path="manifest" remote="krexus-caf" />
   <project name="build" path="build" remote="krexus-caf" >
-  <copyfile src="core/root.mk" dest="Makefile" />
+    <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project name="external_libpng" path="external/libpng" groups="pdk" remote="krexus-caf" />
   <project name="external_sepolicy" path="external/sepolicy" remote="krexus-caf" />
@@ -86,7 +89,6 @@
   <project name="platform_hardware_qcom_wlan" path="hardware/qcom/wlan-caf" revision="mm6.0-caf" remote="aosp-caf" />
   <project name="platform_hardware_ril" path="hardware/ril" remote="aosp-caf" />
   <project name="platform_hardware_ril" path="hardware/ril-caf" revision="mm6.0-caf" remote="aosp-caf" />
-  <project name="platform_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="aosp-caf" />
   <project name="platform_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="aosp-caf" />
   <project name="platform_system_extras" path="system/extras" remote="aosp-caf" />
   <project name="platform_system_media" path="system/media" remote="aosp-caf" />
@@ -97,12 +99,12 @@
 <!-- END AOSP-CAF -->
 
 <!-- BEGIN CYANOGENMOD -->
-  <project name="CyanogenMod/android_external_libncurses" path="external/libncurses" remote="cm" />
-  <project name="CyanogenMod/android_hardware_qcom_audio" path="hardware/qcom/audio/default" remote="cm" />
-  <project name="CyanogenMod/android_hardware_qcom_camera" path="hardware/qcom/camera" remote="cm" />
-  <project name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display" remote="cm" />
-  <project name="CyanogenMod/android_hardware_qcom_gps" path="hardware/qcom/gps" remote="cm" />
-  <project name="CyanogenMod/android_hardware_qcom_media" path="hardware/qcom/media/default" remote="cm" />
+  <project name="android_external_libncurses" path="external/libncurses" remote="cm" />
+  <project name="android_hardware_qcom_audio" path="hardware/qcom/audio/default" remote="cm" />
+  <project name="android_hardware_qcom_camera" path="hardware/qcom/camera" remote="cm" />
+  <project name="android_hardware_qcom_display" path="hardware/qcom/display" remote="cm" />
+  <project name="android_hardware_qcom_gps" path="hardware/qcom/gps" remote="cm" />
+  <project name="android_hardware_qcom_media" path="hardware/qcom/media/default" remote="cm" />
 <!-- END CYANOGENMOD -->
 
 <!-- BEGIN CODEAURORA -->
@@ -353,6 +355,7 @@
   <project groups="pdk" name="platform/libnativehelper" path="libnativehelper"/>
   <project groups="pdk" name="platform/ndk" path="ndk"/>
   <project name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver"/>
+  <project name="platform/packages/apps/Bluetooth" path="packages/apps/Bluetooth"/>
   <project name="platform/packages/apps/CarrierConfig" path="packages/apps/CarrierConfig"/>
   <project name="platform/packages/apps/CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver"/>
   <project groups="pdk-cw-fs" name="platform/packages/apps/CertInstaller" path="packages/apps/CertInstaller"/>
