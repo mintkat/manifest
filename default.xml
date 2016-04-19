@@ -32,6 +32,7 @@
   <project name="external_sepolicy" path="external/sepolicy" remote="krexus-caf" />
   <project name="frameworks_av" path="frameworks/av" remote="krexus-caf" />
   <project name="frameworks_base" path="frameworks/base" remote="krexus-caf" />
+  <project name="frameworks_native" path="frameworks/native" remote="krexus-caf" />
   <project name="frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" groups="pdk" remote="krexus-caf" />
   <project name="frameworks_opt_telephony" path="frameworks/opt/telephony" remote="krexus-caf" />
   <project name="packages_apps_Contacts" path="packages/apps/Contacts" remote="krexus-caf" />
@@ -80,7 +81,6 @@
   <project name="platform_external_tinyalsa" path="external/tinyalsa" remote="aosp-caf" />
   <project name="platform_external_tinycompress" path="external/tinycompress" remote="aosp-caf" />
   <project name="platform_external_zlib" path="external/zlib" remote="aosp-caf" />
-  <project name="platform_frameworks_native" path="frameworks/native" remote="aosp-caf" />
   <project name="platform_hardware_libhardware" path="hardware/libhardware" remote="aosp-caf" />
   <project name="platform_hardware_libhardware_legacy" path="hardware/libhardware_legacy" remote="aosp-caf" />
   <project name="platform_hardware_qcom_bt" path="hardware/qcom/bt" remote="aosp-caf" />
