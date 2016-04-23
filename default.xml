@@ -391,6 +391,7 @@
   <project groups="pdk-cw-fs" name="platform/packages/providers/UserDictionaryProvider" path="packages/providers/UserDictionaryProvider"/>
   <project name="platform/packages/screensavers/WebView" path="packages/screensavers/WebView"/>
   <project name="platform/packages/services/Mms" path="packages/services/Mms"/>
+  <project name="platform/packages/wallpapers/LivePicker" path="packages/wallpapers/LivePicker"/>
   <project groups="pdk" name="platform/pdk" path="pdk"/>
   <project groups="pdk,darwin" name="platform/prebuilts/clang/darwin-x86/host/3.6" path="prebuilts/clang/darwin-x86/host/3.6" clone-depth="1"/>
   <project groups="pdk,linux" name="platform/prebuilts/clang/linux-x86/host/3.6" path="prebuilts/clang/linux-x86/host/3.6" clone-depth="1"/>
