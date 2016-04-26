@@ -48,6 +48,7 @@
   <project name="packages_services_Telecomm" path="packages/services/Telecomm" remote="krexus-caf" />
   <project name="packages_services_Telephony" path="packages/services/Telephony" remote="krexus-caf" />
   <project name="system_core" path="system/core" remote="krexus-caf" />
+  <project name="system_vold" path="system/vold" remote="krexus-caf" />
   <project name="vendor_krexus" path="vendor/krexus" remote="krexus-caf" />
 <!-- END KREXUS-CAF -->
 
@@ -93,7 +94,6 @@
   <project name="platform_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="aosp-caf" />
   <project name="platform_system_extras" path="system/extras" remote="aosp-caf" />
   <project name="platform_system_media" path="system/media" remote="aosp-caf" />
-  <project name="platform_system_vold" path="system/vold" remote="aosp-caf" /> 
   <project name="platform_system_qcom" path="system/qcom" remote="aosp-caf" />
   <project name="platform_vendor_qcom-opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="aosp-caf" />
   <project name="platform_vendor_qcom-opensource_dpm" path="vendor/qcom/opensource/dpm" remote="aosp-caf" />
