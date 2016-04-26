@@ -53,7 +53,6 @@
 <!-- END KREXUS-CAF -->
 
 <!-- BEGIN AOSP-CAF -->
-  <project name="device_qcom_common" path="device/qcom/common" remote="aosp-caf" />
   <project name="device_qcom_sepolicy" path="device/qcom/sepolicy" remote="aosp-caf" />
   <project name="platform_art" path="art" remote="aosp-caf" />
   <project name="platform_bionic" path="bionic" remote="aosp-caf" />
@@ -101,6 +100,7 @@
 <!-- END AOSP-CAF -->
 
 <!-- BEGIN CYANOGENMOD -->
+  <project name="android_device_qcom_common" path="device/qcom/common" remote="cm" />
   <project name="android_external_libncurses" path="external/libncurses" remote="cm" />
   <project name="android_hardware_qcom_audio" path="hardware/qcom/audio/default" remote="cm" />
   <project name="android_hardware_qcom_camera" path="hardware/qcom/camera" remote="cm" />
