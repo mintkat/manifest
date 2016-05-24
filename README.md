@@ -15,7 +15,7 @@ Manifest
 `repo init -u https://github.com/krexus-caf/manifest.git -b caf`
 
 2. Sync		
-`repo sync`
+`repo sync -c -f -j8 --force-sync --no-clone-bundle --no-tags`
 
 3. Load the environment		
 `ln -s vendor/krexus/utils/krebuild.sh krebuild.sh`		
