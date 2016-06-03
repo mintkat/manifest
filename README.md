@@ -9,7 +9,7 @@
 Manifest
 ========
 
-**CodeAURORA 6.0.x** (latest is LA.BR.1.2.7_rb1.14)
+**CodeAURORA 6.0.x** (latest is LA.BR.1.2.7_rb1.20)
 
 1. Initialize the marshmallow repo	
 `repo init -u https://github.com/krexus-caf/manifest.git -b caf`
