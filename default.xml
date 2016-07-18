@@ -115,7 +115,6 @@
 
 <!-- BEGIN CYANOGENMOD -->
   <project name="android_device_qcom_common" path="device/qcom/common" remote="cm" />
-  <project name="android_external_libncurses" path="external/libncurses" remote="cm" />
   <project name="android_hardware_qcom_audio" path="hardware/qcom/audio/default" remote="cm" />
   <project name="android_hardware_qcom_camera" path="hardware/qcom/camera" remote="cm" />
   <project name="android_hardware_qcom_display" path="hardware/qcom/display" remote="cm" />
