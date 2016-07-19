@@ -29,6 +29,9 @@
   <remote  name="umang"
            fetch="https://github.com/umang96" />
 
+  <remote  name="mintkat"
+           fetch="https://github.com/mintkat" />
+
 <!-- BENZO Main -->
   <project path="build" name="build" groups="pdk" remote="benzo" revision="marshmallow" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -124,8 +127,6 @@
 
 <!-- BEGIN XIAOMI -->
   <project name="android_device_xiaomi_kenzo" path="device/xiaomi/kenzo" remote="umang" revision="slim" />
-  <project name="android_kernel_xiaomi_msm8956" path="kernel/xiaomi/msm8956" remote="umang" revision="radon" />
-  <project name="proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="strix" revision="cm-13.0-test" />
 <!-- END XIAOMI -->
 
   <!-- Hardware -->
