@@ -123,10 +123,11 @@
   <project name="android_hardware_qcom_display" path="hardware/qcom/display" remote="cm" />
   <project name="android_hardware_qcom_gps" path="hardware/qcom/gps" remote="cm" />
   <project name="android_hardware_qcom_media" path="hardware/qcom/media/default" remote="cm" />
+  <project name="android_hardware_cyanogen" path="hardware/cyanogen" remote="cm" />
 <!-- END CYANOGENMOD -->
 
 <!-- BEGIN XIAOMI -->
-  <project name="android_device_xiaomi_kenzo" path="device/xiaomi/kenzo" remote="umang" revision="slim" />
+  <project name="android_device_xiaomi_kenzo" path="device/xiaomi/kenzo" remote="mintkat" revision="benzo" />
 <!-- END XIAOMI -->
 
   <!-- Hardware -->
