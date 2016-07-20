@@ -12,7 +12,7 @@ Manifest
 **CodeAURORA 6.0.x** (latest is LA.BR.1.2.7_rb1.20)
 
 1. Initialize the marshmallow repo	
-`repo init -u https://github.com/krexus-caf/manifest.git -b caf`
+`repo init -u https://github.com/mintkat/manifest.git -b slim`
 
 2. Sync		
 `repo sync -c -f -j8 --force-sync --no-clone-bundle --no-tags`
