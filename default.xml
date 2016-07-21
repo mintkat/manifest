@@ -21,8 +21,7 @@
            fetch="https://bitbucket.org" />
 
   <remote  name="cm"
-           fetch="https://github.com/CyanogenMod"
-           revision="refs/heads/cm-13.0" />
+           fetch="https://github.com/CyanogenMod" />
 
   <remote  name="strix"
            fetch="https://github.com/TheStrix" />
@@ -34,13 +33,12 @@
            fetch="https://github.com/mintkat" />
 
 
+
+  <project path="hardware/qcom/audio-caf/msm8952" name="android_hardware_qcom_audio" remote="cm" revision="cm-13.0-caf-8952" />
+  <project path="hardware/qcom/media-caf/msm8952" name="android_hardware_qcom_media" remote="cm" revision="cm-13.0-caf-8952" />
+  <project path="hardware/qcom/display-caf/msm8952" name="android_hardware_qcom_display" remote="cm" revision="cm-13.0-caf-8952" />
+
   <!-- BEGIN CYANOGENMOD -->
-  <project name="android_device_qcom_common" path="device/qcom/common" remote="cm" />
-  <project name="android_hardware_qcom_audio" path="hardware/qcom/audio/default" remote="cm" />
-  <project name="android_hardware_qcom_camera" path="hardware/qcom/camera" remote="cm" />
-  <project name="android_hardware_qcom_display" path="hardware/qcom/display" remote="cm" />
-  <project name="android_hardware_qcom_media" path="hardware/qcom/media/default" remote="cm" />
-  <project name="android_hardware_cyanogen" path="hardware/cyanogen" remote="cm" />	
   <!-- END CYANOGENMOD -->
 
   <!-- BEGIN XIAOMI -->
@@ -80,6 +78,7 @@
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/google/atv" name="device/google/atv" groups="device,fugu,broadcom_pdk,generic_fs" />
+  <project path="device/qcom/common" name="SlimRoms/device_qcom_common" remote="github" revision="mm6.0" />
   <project path="device/qcom/sepolicy" name="SlimRoms/device_qcom_sepolicy" remote="github" revision="mm6.0" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs,pdk-fs" />
@@ -350,6 +349,7 @@
   <project path="hardware/marvell/bt" name="platform/hardware/marvell/bt" groups="marvell_bt" />
   <project path="hardware/qcom/bt" name="SlimRoms/hardware_qcom_bt" remote="github" revision="mm6.0" />
   <project path="hardware/qcom/bt-caf" name="SlimRoms/hardware_qcom_bt" remote="github" revision="mm6.0-caf" />
+  <project path="hardware/qcom/camera" name="SlimRoms/hardware_qcom_camera" remote="github" revision="mm6.0" />
   <project path="hardware/qcom/fm" name="SlimRoms/hardware_qcom_fm" remote="github" revision="mm6.0" />
   <project path="hardware/qcom/gps" name="SlimRoms/hardware_qcom_gps" remote="github" revision="mm6.0" />
   <project path="hardware/qcom/keymaster" name="SlimRoms/hardware_qcom_keymaster" remote="github" revision="mm6.0" />
