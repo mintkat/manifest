@@ -118,37 +118,46 @@
 
 <!-- BEGIN CYANOGENMOD -->
   <project name="android_device_qcom_common" path="device/qcom/common" remote="cm" revision="cm-13.0" />
-  <project path="device/qcom/sepolicy" name="SlimRoms/device_qcom_sepolicy" remote="github" revision="mm6.0" />
+  <project name="android_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="cm" revision="cm-13.0" />
   <project name="android_hardware_cyanogen" path="hardware/cyanogen" remote="cm" revision="cm-13.0" />
-  <project path="hardware/qcom/camera" name="hardware_qcom_camera" groups="qcom" remote="benzo" revision="marshmallow" />
-  <project path="hardware/qcom/audio-caf/msm8952" name="android_hardware_qcom_audio" remote="cm" revision="cm-13.0-caf-8952" />
-  <project path="hardware/qcom/media-caf/msm8952" name="android_hardware_qcom_media" remote="cm" revision="cm-13.0-caf-8952" />
-  <project path="hardware/qcom/display-caf/msm8952" name="android_hardware_qcom_display" remote="cm" revision="cm-13.0-caf-8952" />
-  <project path="hardware/qcom/keymaster" name="hardware_qcom_keymaster" groups="qcom,qcom_keymaster" remote="benzo" revision="marshmallow" />
   <project path="external/dhcpcd" name="SlimRoms/android_external_dhcpcd" remote="github" revision="mm6.0" />
   <project path="external/connectivity" name="SlimRoms/android_external_connectivity" remote="github" revision="mm6.0" />
   <project path="external/libnfnetlink" name="SlimRoms/android_external_libnfnetlink" remote="github" revision="mm6.0" />
   <project path="external/libnetfilter_conntrack" name="SlimRoms/android_external_libnetfilter_conntrack" remote="github" revision="mm6.0" />
-
-
+  <project path="system/qcom" name="android_system_qcom" remote="cm" groups="qcom" revision="cm-13.0" />
+  <project path="hardware/qcom/audio" name="hardware_qcom_audio" groups="qcom,qcom_audio" remote="benzo" revision="marshmallow" />
+  <project path="hardware/qcom/audio-caf/msm8952" name="android_hardware_qcom_audio" remote="cm" revision="cm-13.0-caf-8952" />
+  <project path="hardware/qcom/camera" name="hardware_qcom_camera" groups="qcom" remote="benzo" revision="marshmallow" />
+  <project path="hardware/qcom/media" name="platform/hardware/qcom/media" groups="qcom" />
+  <project path="hardware/qcom/media-caf/msm8952" name="android_hardware_qcom_media" remote="cm" revision="cm-13.0-caf-8952" />
+  <project path="hardware/qcom/display" name="hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="benzo" revision="marshmallow" />
+  <project path="hardware/qcom/display-caf/msm8952" name="android_hardware_qcom_display" remote="cm" revision="cm-13.0-caf-8952" />
+  <project path="hardware/qcom/keymaster" name="hardware_qcom_keymaster" groups="qcom,qcom_keymaster" remote="benzo" revision="marshmallow" />
 <!-- END CYANOGENMOD -->
 
 <!-- BEGIN XIAOMI -->
-  <project name="android_device_xiaomi_kenzo" path="device/xiaomi/kenzo" remote="mintkat" revision="benzo" />
+  <project name="android_device_xiaomi_kenzo" path="device/xiaomi/kenzo" remote="cm" revision="cm-13.0" />
+  <project name="CyanogenMod/android_kernel_xiaomi_msm8956" path="kernel/xiaomi/msm8956" remote="cm" revision="cm-13.0" />
+  <project name="TheMuppets/proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="github" revision="cm-13.0" />
 <!-- END XIAOMI -->
+
 
   <!-- Hardware -->
   <project path="hardware/ril" name="hardware_ril" groups="pdk" remote="benzo" revision="marshmallow" />
 
+
   <!-- Prebuilts -->
   <project path="prebuilts/ndk" name="prebuilts_ndk" groups="pdk" remote="benzo" revision="marshmallow" />
-  <project path="prebuilts/clang/linux-x86/host/3.9" name="xanaxdroid/dragontc-3.9" groups="pdk,linux" remote="bb" revision="dragontc" clone-depth="1" />
+  <project path="prebuilts/clang/linux-x86/host/4.0" name="xanaxdroid/dragontc-4.0" groups="pdk,linux" remote="bb" revision="dragontc" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-7.0" name="xanaxdroid/aarch64-7.0" remote="bb" revision="sabermod" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-6.1" name="xanaxdroid/aarch64-6.1" remote="bb" revision="sabermod" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.1" name="xanaxdroid/aarch64-linux-android-6.1" remote="bb" revision="sabermod" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="xanaxdroid/aarch64-linux-android-4.9" remote="bb" revision="sabermod" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-7.0" name="xanaxdroid/arm-eabi-7.0" remote="bb" revision="sabermod" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-6.1" name="xanaxdroid/arm-linux-androideabi-6.1" groups="pdk,linux,arm" remote="bb" revision="sabermod" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="xanaxdroid/arm-linux-androideabi-4.9" groups="pdk,linux,arm" remote="bb" revision="sabermod" clone-depth="1" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.4" name="xanaxdroid/arm-linux-androideabi-5.4" groups="pdk,linux,arm" remote="bb" revision="sabermod" clone-depth="1" />
   <project path="prebuilts/misc" name="prebuilts_misc" groups="pdk" clone-depth="1" remote="benzo" revision="marshmallow" />
+
 
   <!-- AOSP -->
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
