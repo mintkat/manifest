@@ -137,7 +137,6 @@
 
 <!-- BEGIN XIAOMI -->
   <project name="android_device_xiaomi_kenzo" path="device/xiaomi/kenzo" remote="cm" revision="cm-13.0" />
-  <project name="android_kernel_xiaomi_msm8956" path="kernel/xiaomi/msm8956" remote="cm" revision="cm-13.0" />
   <project name="TheMuppets/proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="github" revision="cm-13.0" />
 <!-- END XIAOMI -->
 
